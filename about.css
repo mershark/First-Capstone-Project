@@ -70,10 +70,7 @@
   padding-top: 28px;
 }
 
-.desktop-nav .nav-men a:hover {
-  color: #ec5242;
-}
-
+.desktop-nav .nav-men a:hover,
 .desktop-nav .nav-men a.active {
   color: #ec5242;
 }
@@ -414,7 +411,9 @@
   .homepage-h8 {
     display: flex;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
     font-size: 50px;
+    font-weight: 800;
     margin-right: 40px;
     margin-left: 40px;
     align-items: center;
