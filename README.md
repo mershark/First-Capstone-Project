@@ -122,13 +122,13 @@ You can deploy this project using:
 
 ### Project documentation and short descriptive Video
 
-- Click on the link for [Short video](link here)
+- Click on the link for [Short video](Click here)
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](link here)
+- [Live Demo]([Click here](https://mershark.github.io/index.html))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
