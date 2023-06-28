@@ -120,9 +120,10 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Project documentation and short descriptive Video
+### Project short video walkthrough
 
-- Click on the link for [Short video](Click here)
+- [Short video]([Click here](https://www.loom.com/share/a14cb0a85e2d4aec8f6a24c4638acc9e?sid=621389e5-5941-4cbd-91e0-1522b7a4b7d3))
+  
 
 <!-- LIVE DEMO -->
 
