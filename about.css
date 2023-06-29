@@ -130,10 +130,6 @@
   margin-top: 0;
 }
 
-.homepage-h8 {
-  display: none;
-}
-
 .lineonabt {
   display: none;
 }
@@ -465,21 +461,7 @@
   }
 
   .homepage-h1 {
-    display: none;
-  }
-
-  .homepage-h8 {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lato', sans-serif;
-    font-size: 50px;
-    font-weight: 800;
-    margin-right: 40px;
-    margin-left: 40px;
-    align-items: center;
-    margin-bottom: 0;
-    color: #ec5242;
-    text-align: center;
+    width: 800px;
   }
 
   .lineonabt {
