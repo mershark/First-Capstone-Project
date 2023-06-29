@@ -68,6 +68,7 @@
   display: flex;
   padding-left: 28px;
   padding-top: 28px;
+  justify-content: center;
 }
 
 .desktop-nav .nav-men a:hover,
@@ -85,27 +86,16 @@
 }
 
 /* landing page contet......................... */
-.top-header {
-  background-color: #272a31;
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-}
-
-.top-header-items {
-  font-family: 'Lato', sans-serif;
-  color: #fff;
-}
-
 .landing-page {
   background-image: url('/images/mobile-bg.svg');
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
   width: auto;
+}
+
+.top-header-div {
+  display: none;
 }
 
 .landing-page-div {
@@ -159,7 +149,7 @@
 
 /* Program Agenda */
 .agenda {
-  background-color: black;
+  background-image: url('images/program-bg-img.jpg');
 }
 
 .agenda-ul {
@@ -175,9 +165,9 @@
   align-content: center;
   align-items: center;
   padding: 20px;
-  background-image: url('/images/agenda-bg.svg');
+  background: rgba(255, 255, 255, 0.1);
   background-size: contain;
-  border: 3px solid black;
+  border: 3px solid#272a31;
   gap: 20px;
 }
 
@@ -253,6 +243,15 @@
   align-items: center;
 }
 
+.header-underline {
+  width: 3rem;
+  height: 0.2rem;
+  border-bottom: 1px solid #ec5242;
+  margin: 0 auto;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
 .speakers-img {
   width: 30%;
 }
@@ -315,6 +314,38 @@
 
   .header-container {
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .top-header-div {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-header {
+    background-color: #272a31;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: 0;
+    padding-right: 110px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .top-header-items {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
   }
 
   .desktop-nav {
@@ -322,21 +353,34 @@
     list-style: none;
     flex-direction: row;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.125rem;
     gap: 40px;
     margin-right: 80px;
+    align-items: center;
   }
 
   .nav-link {
     text-decoration: none;
-    color: #272a31;
+    color: black;
+    font-size: 1.1rem;
   }
 
   .navonmo {
     display: none;
   }
 
+  .nav-men-cc {
+    padding: 14px;
+    border: 5px solid #ec5242;
+    margin-left: 50px;
+  }
+
+  .nav-link-cc {
+    text-decoration: none;
+    color: #ec5242;
+    font-size: 1.1rem;
+  }
+
+  /* landing page */
   .landing-page {
     background-image: url('/images/desktop-bg.svg');
     background-size: cover;
@@ -356,15 +400,17 @@
 
   .agenda-ul {
     display: flex;
-    margin-left: 60px;
-    margin-right: 60px;
-    gap: 10px;
+    padding-left: 17%;
+    padding-right: 17%;
+    gap: 1px;
+    justify-content: center;
   }
 
   .agenda-li {
     display: flex;
     flex-direction: column;
     gap: 0;
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .agenda-p {
@@ -372,8 +418,13 @@
     text-align: center;
   }
 
+  .agenda-h3 {
+    font-size: 1.6rem;
+  }
+
   .agenda-h5 {
     margin: 0;
+    padding-top: 10px;
   }
 
   .join-btn {
@@ -388,10 +439,10 @@
     text-underline-offset: 5px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.1em;
-    font-size: 12px;
-    padding-top: 12px;
+    font-size: 1rem;
+    padding-top: 40px;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 
   /* Speakers */

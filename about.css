@@ -68,6 +68,7 @@
   display: flex;
   padding-left: 28px;
   padding-top: 28px;
+  justify-content: center;
 }
 
 .desktop-nav .nav-men a:hover,
@@ -104,6 +105,10 @@
   background-color: #f4f4f4;
   height: auto;
   width: auto;
+}
+
+.top-header-div {
+  display: none;
 }
 
 .landing-page-div {
@@ -185,7 +190,8 @@
 
 .logo-h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
   text-align: center;
   display: flex;
@@ -194,13 +200,13 @@
   margin-bottom: 0;
   margin-right: 10px;
   margin-left: 10px;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 
 .logo-p2 {
   font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 400;
   line-height: 26px;
   margin-bottom: 20px;
   text-align: center;
@@ -211,8 +217,8 @@
 
 .logo-p4 {
   font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 400;
   line-height: 26px;
   margin-bottom: 20px;
   text-align: center;
@@ -239,6 +245,15 @@
   align-content: center;
   align-items: center;
   margin-top: 30px;
+}
+
+.header-underline {
+  width: 3rem;
+  height: 0.2rem;
+  border-bottom: 1px solid #ec5242;
+  margin: 0 auto;
+  padding-top: 5px;
+  margin-bottom: 10px;
 }
 
 .landing-page-dive {
@@ -317,9 +332,9 @@
   flex-direction: column;
   color: white;
   font-family: "Lato", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
-  padding-top: 40px;
+  padding-top: 20px;
   margin-top: 0;
   letter-spacing: 0.1rem;
   align-items: center;
@@ -368,6 +383,38 @@
 
   .header-container {
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .top-header-div {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-header {
+    background-color: #272a31;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: 0;
+    padding-right: 110px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .top-header-items {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
   }
 
   .desktop-nav {
@@ -375,18 +422,31 @@
     list-style: none;
     flex-direction: row;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
     gap: 40px;
     margin-right: 80px;
+    align-items: center;
   }
 
   .nav-link {
     text-decoration: none;
-    color: #272a31;
+    color: black;
+    font-size: 1.1rem;
   }
 
   .navonmo {
     display: none;
+  }
+
+  .nav-men-cc {
+    padding: 14px;
+    border: 5px solid #ec5242;
+    margin-left: 50px;
+  }
+
+  .nav-link-cc {
+    text-decoration: none;
+    color: #ec5242;
+    font-size: 1.1rem;
   }
 
   /* landing page */
@@ -496,7 +556,7 @@
 
   /* home page footer */
   .home-footer {
-    background-color: black;
+    background-color: #272a31;
     display: flex;
     align-items: center;
     justify-content: center;

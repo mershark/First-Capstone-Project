@@ -11,22 +11,36 @@
 
 <body class="body">
   <section class="landing-page">
+    <div class="top-header-div">
+      <ul class="top-header">
+        <li><a href="#" class="facebook"><img src="./images/icons8-facebook-f.svg" alt="This is a twitter button"></a></li>
+        <li><a href="#" class="twitter"><img src="./images/twitter.svg" alt="This is a twitter button"></a></li>
+        <li><a href="#" class="top-header-items">English</li>
+        <li><a href="#" class="top-header-items">My Page</li>
+        <li><a href="#" class="top-header-items">Logout</li>
+      </ul>
+    </div>
     <header class="header-container">
       <a href="index.html" class="my-logo"><img src="./images/logo.png" alt="This is my Portfolio Logo"></a>
       <nav class="navigation">
         <a href="" class="my-menu" title="menu bar"></a>
         <ul class="desktop-nav">
-          <li class="nav-men">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-men">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
+          <li class="nav-men"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-men"><a href="#" class="nav-link">Program</a></li>
+          <li class="nav-men"><a href="#" class="nav-link">Join</a></li>
+          <li class="nav-men"><a href="#" class="nav-link">Sponsor</a></li>
+          <li class="nav-men"><a href="#" class="nav-link">News</a></li>
+          <li class="nav-men-cc"><a href="#" class="nav-link-cc">CC Campaign</a></li>
         </ul>
         <div id="mobilenav" class="mobileNavigation">
           <a href="javascript:void(0)" class="killnav" onclick="menukill()">&times;</a>
           <a href="index.html" class="close-menu">Home</a>
           <a href="about.html" class="close-menu">About</a>
+          <a href="#" class="close-menu">Program</a>
+          <a href="#" class="close-menu">Join</a>
+          <a href="#" class="close-menu">Sponsor</a>
+          <a href="#" class="close-men">News</a>
+          <a href="#" class="close-men">CC Program</a>
         </div>
         <span class="navonmo" id="menu-toggle"><img src="./images/Union (2).png" alt="menu nav bar" style="width: 40px; height: 40px";></span>
       </nav>
@@ -41,7 +55,8 @@
   </section>
 
   <section class="agenda">
-    <h3 class="agenda-h3">Program Agenda <img src="/images/line.png" alt="line"></h3>
+    <h3 class="agenda-h3">Main Program</h3>
+    <div class="header-underline"></div>
     <ul class="agenda-ul">
       <li class="agenda-li">
         <img src="/images/icons8-lecture-64.png" alt="This is a lecturing image">
@@ -68,13 +83,16 @@
       <button class="join-btn">Join Summit 2023</button>
     </div>
     <div class="btn-text">
-      <a href="#" class="join-text" title="See more button">SEE THE WHOLE AGENGA</a>
+      <a href="#" class="join-text" title="See more button">SEE THE WHOLE PROGRAM</a>
     </div>
   </section>
   
   <!-- Featured Speakers -->
+  <section>
+    <h3 class="featured-speaker-h3">Featured Speakers</h3>
+    <div class="header-underline"></div>
+  </section>
   <section id="featured-speakers-section" class="featured-speaker">
-    <h3 class="featured-speaker-h3">Featured Speakers <img src="/images/line.png" alt="line"></h3>
     <div id="speakers-container"></div>
     <div class="button-posi">
       <button id="see-more-button" class="see-more-btn">MORE <img src="/images/arrow.png" alt="see more icon"></button>
@@ -83,7 +101,8 @@
 
    <!-- Partners -->
   <section class="partners">
-    <h3 class="sponsor-h3">Sponsors <img src="/images/line.png" alt="line"></h3>
+    <h3 class="sponsor-h3">Sponsors</h3>
+    <div class="header-underline"></div>
     <ul class="partners-ul">
       <img class="sponsor-img" src="/images/coca-cola-2021.svg" alt="sponsors imgage">
       <img class="sponsor-img" src="/images/coca-cola-2021.svg" alt="sponsors imgage">
