@@ -103,36 +103,36 @@ const createSpeakerHTML = (speaker) => {
 const addSpeakersToPage = () => {
   const featuredSpeakersSection = document.getElementById("featured-speakers-section");
   const speakersContainer = document.getElementById("speakers-container");
-  let speakersHTML = "";
+  let speakersHTML = '';
   let cuurentSpeakers = 2;
   let allSpeakers;
 
   // Update visibility of speakers
   const updateVisibility = () => {
-    for (let i = 0; i < allSpeakers.length; i++) {
+    for (let i = 0; i < allSpeakers.length; i += 1) {
       if (i < cuurentSpeakers) {
-        allSpeakers[i].style.display = "flex";
+        allSpeakers[i].style.display = 'flex';
       } else {
-        allSpeakers[i].style.display = "none";
+        allSpeakers[i].style.display = 'none';
       }
     }
   };
 
   // Iterate through each speaker in the data and create the HTML
-  for (let i = 0; i < speakers.length; i++) {
+  for (let i = 0; i < speakers.length; i += 1) {
     speakersHTML += createSpeakerHTML(speakers[i]);
   }
   speakersContainer.innerHTML = speakersHTML;
 
   // Get all speaker elements
-  allSpeakers = speakersContainer.getElementsByClassName("speakers-main");
+  allSpeakers = speakersContainer.getElementsByClassName('speakers-main');
 
   // Screen size display
   const screenWidth = window.innerWidth;
   if (screenWidth >= 768) {
     // Show all speakers on desktop
-    for (let i = 0; i < allSpeakers.length; i++) {
-      allSpeakers[i].style.display = "flex";
+    for (let i = 0; i < allSpeakers.length; i += 1) {
+      allSpeakers[i].style.display = 'flex';
     }
   } else {
     // Only speakers on mobile
@@ -140,17 +140,17 @@ const addSpeakersToPage = () => {
   }
 
   // Listener to more button
-  const seeMoreButton = document.getElementById("see-more-button");
+  const seeMoreButton = document.getElementById('see-more-button');
   if (screenWidth < 768) {
-    seeMoreButton.style.display = "block";
-    seeMoreButton.addEventListener("click", () => {
+    seeMoreButton.style.display = 'block';
+    seeMoreButton.addEventListener('click', () => {
       cuurentSpeakers += 2;
       updateVisibility();
     });
   } else {
-    seeMoreButton.style.display = "none";
+    seeMoreButton.style.display = 'none';
   }
 };
 
-window.addEventListener("load", addSpeakersToPage);
-window.addEventListener("resize", addSpeakersToPage);
+window.addEventListener('load', addSpeakersToPage);
+window.addEventListener('resize', addSpeakersToPage);
