@@ -1,5 +1,7 @@
 # Capstone project
 
+![mersharks first capstone](https://github.com/mershark/First-Capstone-Project/assets/113654948/6d81c005-fb8b-4fb6-a0f5-a9fb7473c7a4)
+
 
 # 📗 Table of Contents
 
